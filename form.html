@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <h1><u>Registration Form</u></h1>
+
+   <form action="/submit-form" method="post">
+     <label for id="name">Enter name</label><br>
+     <input type="text" id="name" ><br><br>
+
+     <label for id="password">Enter password</label><br>
+    <input type="password" id="password"><br><br>
+    <label>Select gender:</label>
+            <div class="gender">
+                <input type="radio" name="gender" value="male" id="male" required />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female" />
+                <label for="female">Female</label>
+            </div><BR><BR>
+
+        <label for="dob">Enter your Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required /><br><br><br>
+        <label> Select course:</label>
+            <div class="couse">
+                <input type="checkbox" name="C++" value="C++" id="C++" >
+                <label for="C++">C++</label>
+                <input type="checkbox" name="Math" value="Math" id="Math" >
+                <label for="Math">Math</label>
+                <input type="checkbox" name="Web" value="Web" id="Web" >
+                <label for="Web">Web</label>
+                <input type="checkbox" name="DSD" value="DSD" id="DSD" >
+                <label for="">DSD</label>
+            </div> <br><br> 
+        <label>Select State:</label>       
+        <select name="State">
+                <option value="j&k">J&K</option>
+                <option value="punjab">Punjab</option>
+                <option value="haryana">Haryana</option>
+                <option value="UP">Himachal Pradesh</option>
+                <option value="MP">Delhi</option>
+                <option value="MP">Uttarakhand</option>
+                <option value="HP">Others</option>
+        </select><br><br>
+        <label for="address">Enter your Address:</label><br>
+            <textarea id="address" required></textarea><br>
+        
+      <input type="submit" value="Submit">
+</form>
+</body>
+</html>
