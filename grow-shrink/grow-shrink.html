@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow-Shrink</title>
+    <style>
+        .abc{
+            text-align: center;
+            margin-top: 20%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="abc"></div>
+    <script>
+        let el=document.querySelector(".abc");
+        let size=10;
+        let growing=true;
+        function growShrink(){
+            if(growing){
+                el.style.color="green";
+                size++;
+                if(size >= 200){
+                    growing = false;
+                }
+            } else { 
+                el.style.color="brown";
+                size--;
+                if(size <= 20){
+                    growing = true;
+                }
+            }
+            el.style.fontSize = size + "px"; 
+            el.innerText = "Hello:)";
+        }
+
+        setInterval(growShrink , 2);
+
+    </script>
+</body>
+</html>
