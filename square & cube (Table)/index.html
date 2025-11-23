@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square and cube</title>
+    <style>
+        body{
+            background-color:rgb(134, 131, 131);
+            font-family:'Times New Roman', Times, serif; 
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            
+        }
+        table, tr, td{
+            padding: 2px;
+            text-align: center;
+            border: 2px solid black;
+            border-collapse: collapse;
+            box-shadow: 2px  2px rgb(8, 7, 7);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><b>Number</b></td>
+            <td><b>Square</b></td>
+            <td><b>Cube</b></td>
+        </tr>
+    </table>
+    <script>
+        for(let i=1;i<21;i++){
+            setTimeout(()=>{
+            let el=document.querySelector("table");
+            let tr1=document.createElement("tr");
+            tr1.innerText=i;
+            el.appendChild(tr1);
+            let td1=document.createElement("td");
+            td1.innerText=i*i;
+            tr1.appendChild(td1);
+            let td2=document.createElement("td");
+            td2.innerText=i*i*i;
+            tr1.appendChild(td2)
+            },i*1000)
+        }
+    </script>
+    
+</body>
+</html>
