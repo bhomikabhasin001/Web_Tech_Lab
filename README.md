@@ -5,6 +5,6 @@
 [5.Frame](https://bhomikabhasin001.github.io/Web_Tech_Lab/frame/index.html)<br>
 [6.Time](https://bhomikabhasin001.github.io/Web_Tech_Lab/time/time.html)<br>
 [7.Grow-shrink](https://bhomikabhasin001.github.io/Web_Tech_Lab/grow-shrink/grow-shrink.html)<br>
-
+[8.Square & cube (Table)](https://bhomikabhasin001.github.io/Web_Tech_Lab/square&cube(Table)/index.html)<br>
 
 
