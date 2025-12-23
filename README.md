@@ -6,5 +6,6 @@
 [6.Time](https://bhomikabhasin001.github.io/Web_Tech_Lab/time/time.html)<br>
 [7.Grow-shrink](https://bhomikabhasin001.github.io/Web_Tech_Lab/grow-shrink/grow-shrink.html)<br>
 [8.Square & cube (Table)](https://bhomikabhasin001.github.io/Web_Tech_Lab/square_and_cube/index.html)<br>
+[9.CV](https://bhomikabhasin001.github.io/Web_Tech_Lab/cv/cv.html)
 
 
