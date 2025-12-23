@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <style>
+        span{
+            color:red;
+            font-size:14px;
+        }
+        #body{
+        border: 2px, solid black;
+        display: inline-block;  
+        box-sizing: border-box; 
+        text-align: center;        
+        }
+        form{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body id="body">
+<form onsubmit="return validateForm()">
+    Enter Email:<br>
+    <input type="text" id="email">
+    <br><span id="emailErr"></span><br>
+    Enter Password:<br>
+    <input type="password" id="pass">
+    <br><span id="passErr"></span><br>
+    Enter Confirm Password:<br>
+    <input type="password" id="cp">
+    <br><span id="confirmPassErr"></span><br>
+    Enter Phone number:<br>
+    <input type="text" id="phone">
+    <br><span id="phoneErr"></span><br>
+    <button type="submit">Submit</button>
+</form>
+<script>
+function validateForm(){
+    let email = document.getElementById("email").value;
+    let pass = document.getElementById("pass").value;
+    let cp = document.getElementById("cp");
+    let phone = document.getElementById("phone").value;
+    let valid = true;
+    if(email==""){
+        document.getElementById("emailErr").innerHTML="Email is required";
+        valid=false;
+    }else{
+        document.getElementById("emailErr").innerHTML="";
+    }
+    if(pass.length<6){
+        document.getElementById("passErr").innerHTML="Minimum 6 characters required";
+        valid=false;
+    }else{
+        document.getElementById("passErr").innerHTML="";
+    }
+    if(cp!==pass){
+        document.getElementById("confirmPassErr").innerHTML="Passwords do not match";
+        valid=false;
+    }else{
+        document.getElementById("confirmPassErr").innerHTML="";
+    }
+    if(phone.length != 10 || isNaN(phone)){
+        document.getElementById("phoneErr").innerHTML="Enter a valid 10 digit number";
+        valid=false;
+    }else{
+        document.getElementById("phoneErr").innerHTML="";
+    }
+    return valid;
+}
+</script>
+</body>
+</html>
